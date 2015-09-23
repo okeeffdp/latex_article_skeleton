@@ -1,0 +1,9 @@
+%  Daniel O'Keeffe
+%  ABSTRACT
+%  Alternative title for the abstract
+% \renewcommand{\abstractname}{Executive Summary}
+% \begin{abstract}
+% Your abstract goes here...
+% \end{abstract}
+\section{Abstract}
+\lipsum

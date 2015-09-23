@@ -1,0 +1,95 @@
+%  Daniel O'Keeffe  %
+%~~~~~~~~~~~~~~~~~~~%
+
+%  DOCUMENT TYPE DECLARATION
+\documentclass[12pt]{article}
+
+%  DOCUMENT MARGINS
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+
+%  CAPTIONS
+  %  Declare the overall style to be used by captions
+  %  Here it is small font size and bold type.
+\usepackage[labelfont={bf,small}, position=top]{caption}
+  %  New commands can be declared
+  %  Such as the pipe seperator
+\DeclareCaptionLabelSeparator{pipe}{~\textbar~}
+  %  New commands can then be initialized for a specific figure or table,
+  %  or declared for the global document as is here
+\captionsetup{labelsep=pipe}
+%  The subfigure package alters subfigures
+\usepackage{subcaption}
+
+%~~~~~~~~~~~~~~~~~~~%
+% - - For Books - - %
+% %HEADER
+% %Manipulate margins
+% % \usepackage{styles/simplemargins}
+
+% %Modify headers
+% \usepackage{fancyhdr}
+% %Remove numbering for initial pages
+% \pagestyle{fancy}
+% \fancyhf{}
+% % Remove the border at the top of the pages
+% \renewcommand{\headrulewidth}{0pt}
+% % \fancyhead{}
+% % \fancyfoot{}
+% % Author name on the left for even pages
+% \fancyhead[LE]{\textsc{bobbie holbrook}}
+% % Book Title on the right for odd pages
+% \fancyhead[RO]{\textsc{blue ether}}
+% % Page number on [L]eft for [E]ven pages 
+% \fancyfoot[LE]{\thepage}
+% % Page number on [R]ight for [O]dd pages 
+% \fancyfoot[RO]{\thepage}
+%~~~~~~~~~~~~~~~~~~~%
+
+
+%  PLACEHOLDER TEXT
+\usepackage{lipsum}
+\setlipsumdefault{1-2}
+
+%  HYPERLINKS
+\usepackage{hyperref}
+  %  Set hyperlink type
+\hypersetup{breaklinks, colorlinks, linkcolor=black, urlcolor=black, anchorcolor=black, citecolor=black}
+
+%  MATHEMATICS
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+%  TEXT
+\usepackage[utf8]{inputenc}
+
+%  LINE SPACING
+\usepackage{setspace}
+\singlespacing
+%\onehalfspacing
+%\doublespacing
+%\setstretch{<factor>} % for custom spacing
+  %  Remove indents from new paragraphs
+\usepackage{parskip}
+
+%  DIAGRAMS
+\usepackage[pdftex]{graphicx}
+
+%  TABLES
+\usepackage{footnote}
+\usepackage{booktabs}
+
+%  REFERENCES
+%  Depricated Bibliography style
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+%  DEPRICATED
+	%  References
+	% \usepackage[american]{babel}
+	% \usepackage{csquotes}
+	% \usepackage[backend=bibtex, sorting=nyt,style=apa, natbib=true, url=false, doi=false, isbn=false]{biblatex}
+	% % \usepackage[, style=authoryear,citestyle=alphabetic,sorting=nty]{biblatex}
+	% \addbibresource{C:/Users/Daniel/Documents/BibTex/library.bib}
+	% \DeclareLanguageMapping{american}{american-apa}
